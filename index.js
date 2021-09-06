@@ -7,7 +7,7 @@ app.use(express.json())
 
 app.use(require("./routes/reviews.route"))
 app.use(require("./routes/films.route"))
-/*app.use(require("./routes/genres.route"))*/
+app.use(require("./routes/genres.route"))
 
 
 mongoose
