@@ -1,18 +1,19 @@
 .img {
   width: 270px;
   height: 400px;
+  border-radius: 10px;
 }
 
 .catalog {
   display: inline-flex;
-  justify-content: center;
   text-align: center;
-  background-image: url("https://365psd.ru/images/backgrounds/bg-light-4860.png");
+  text-align: center;
+  justify-content: space-around;
+  width: 380px;
+  margin-left: 95px;
 }
 .item {
-  width: 375px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -20,10 +21,14 @@
   font-size: 25px;
   width: 370px;
   margin-bottom: 10px;
+  color: bisque;
+  font-family: Corbel;
 }
 
 .GenreFilm {
   font-size: 20px;
+  color: bisque;
+  font-family: Corbel;
 }
 
 .card {
@@ -32,38 +37,133 @@
   align-items: center;
 }
 
-.header{
-  background-color: green;
+.header {
+  text-align: center;
+  color: #100e19;
+  background-color: bisque;
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 70px;
   align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
-.headInfo{
-  font-size: 30px;
-  padding-left: 200px;
-  padding-top: 20px;
-  font-family: "Graphik Kinopoisk LC Web",Arial,Tahoma,Verdana,sans-serif;
+.headInfo {
+  color: #100e19;
+  font-size: 24px;
+  font-family: Corbel;
+  text-decoration: none;
 }
 
-.siteName{
+.siteName {
   font-size: 40px;
-  padding-left: 20px;
-  padding-top: 10px;
-  font-family: "Graphik Kinopoisk LC Web",Arial,Tahoma,Verdana,sans-serif;
+  font-family: Trattatello, fantasy;
 }
 
-.firstFilmInfo{
-  font-family:"Graphik Kinopoisk LC Web",Arial,Tahoma,Verdana,sans-serif;
-  font-size: 33px;
+.firstFilmInfo {
+  color: lightgray;
+  font-family: Corbel;
+  font-size: 16px;
+  width: 270px;
+  text-decoration: none;
+  text-align: justify;
 }
 
-.FirstFilm{
+.NewsFilms {
   display: flex;
+  text-align: center;
+  width: 1000px;
+  display: inline-flex;
+  justify-content: space-between;
+  color: lightgray;
+  font-size: 24px;
+  font-family: Corbel;
+  margin-bottom: 24px;
 }
 
-.FirstFilmName{
+.FirstFilm {
+  display: flex;
+  padding-right: 10px;
+  width: 1200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.FirstFilmName {
   font-size: 33px;
-  font-family:"Graphik Kinopoisk LC Web",Arial,Tahoma,Verdana,sans-serif;
+  color: lightgray;
+  font-family: Corbel;
+  width: 670px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+}
+
+.img2 {
+  border-radius: 10px;
+  margin-right: 30px;
+  margin-left: 35px;
+  width: 280px;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.site {
+  text-align: center;
+  width: 1300px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.imgCinema {
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+}
+.CinemaInfo {
+  font-size: 20px;
+  display: inline-flex;
+  padding: 30px;
+  font-family: Corbel;
+  justify-content: space-between;
+  width: 1200px;
+  margin-bottom: 20px;
+}
+.CinemaDiv {
+  padding-bottom: 20px;
+  color: lightgray;
+  justify-content: space-between;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: #100e19;
+}
+
+.textCinema {
+  color: lightgray;
+  font-size: 28px;
+  font-family: Corbel;
+}
+
+.footer {
+  text-align: center;
+  color: #100e19;
+  background-color: bisque;
+  display: flex;
+  width: 80%;
+  height: 70px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.soc {
+  font-family: Corbel;
+  font-size: 25px;
+  text-decoration: none;
+  color: #100e19;
 }

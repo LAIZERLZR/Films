@@ -17,6 +17,7 @@ function Films({ film }) {
       </div>
     </div>
 
+
   );
 }
 export default Films;
