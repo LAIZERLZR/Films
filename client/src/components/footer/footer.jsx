@@ -5,13 +5,13 @@ function Footer() {
     <div>
       <div className="footer">
         <a className="soc" href="https://www.instagram.com/intocode/?hl=ru">
-          Инстаграм
+          <b>Инстаграм</b>
         </a>
         <a className="soc"  href="">
-          Email
+          <b>Email</b>
         </a>
         <a className="soc"  href="https://twitter.com/?lang=ru">
-          Twitter
+          <b>Twitter</b>
         </a>
       </div>
     </div>

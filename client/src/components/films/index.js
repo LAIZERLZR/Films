@@ -5,10 +5,10 @@ import { loadFilms } from "../../redux/features/film";
 
 function Film() {
   const dispatch = useDispatch();
-  const users = useSelector((state) => state.films.catalog);
+  const films = useSelector((state) => state.films.catalog);
   const loading = useSelector((state) => state.films.loading);
 
-  console.log(users)
+  console.log(films)
   useEffect(() => {
     dispatch(loadFilms());
   }, []);
@@ -19,7 +19,7 @@ function Film() {
 
   return (
     <div>
-      {users.map((flm) => {
+      {films.map((flm) => {
         return <Films key={flm._id} film={flm} />;
       })}
     </div>

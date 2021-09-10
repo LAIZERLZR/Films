@@ -7,10 +7,10 @@ function Films({ film }) {
 
   return (
 
-    <div className="catalog">
-      <div className="item">
-        <div className="card">
-          <div><img className="img" src={film.img} /></div>
+    <div className="catalogFilms">
+      <div className="itemFilms">
+        <div className="cardFilms">
+          <div><img className="imgFilms" src={film.img} /></div>
           <div className="FilmName">{film.name}</div>
           <div className="GenreFilm">{film.genreId.name}</div>
         </div>

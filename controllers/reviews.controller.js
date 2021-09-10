@@ -1,4 +1,4 @@
-const reviews = require("../models/Reviews.model")
+const reviews = require("../models/Review.model")
 
 module.exports.reviewsController = {
   createReview: async (req,res) => {

@@ -1,13 +1,15 @@
-const films = require("../models/Films.model")
+const films = require("../models/Film.model")
 
 module.exports.filmsController = {
   createFilm: async (req, res) => {
     try {
       await films.create({
-        films: req.body.films,
+        img: req.body.img,
         name: req.body.name,
-        genre: req.body.genre,
-        description: req.body.description
+        description: req.body.description,
+        price: req.body.price,
+        rating: req.body.rating,
+        genreId: req.body.genreId,
       })
       res.json('Фильм успешно добавлен')
     }catch (err){
@@ -28,6 +30,8 @@ module.exports.filmsController = {
         films: req.body.films,
         name: req.body.name,
         genre: req.body.genre,
+        price: req.body.price,
+        rating: req.body.rating,
         description: req.body.description
       })
       res.json("Фильм успешно обновлен")
@@ -37,7 +41,7 @@ module.exports.filmsController = {
   },
   getFilms: async (req,res) => {
     try {
-      const Films = await films.find()
+      const Films = await films.find().populate('genreId', 'name')
       res.json(Films)
     }catch (err){
       console.log(err)

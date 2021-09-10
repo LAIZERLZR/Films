@@ -1,5 +1,5 @@
 const { Router } = require("express")
-const { genresController } = require("../controllers/genresController")
+const { genresController } = require("../controllers/genres.controller")
 const router = Router();
 
 router.post("/genres", genresController.addGenre)

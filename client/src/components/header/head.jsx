@@ -10,11 +10,13 @@ function Header() {
         </div>
         <b>
           <a className="headInfo" href="/films">
-            Films
+            <b>Films</b>
           </a>
         </b>
-        <div className="headInfo">
-          <b>Genres</b>
+        <div>
+          <a className="headInfo" href="/genres">
+            <b>Genres</b>
+          </a>
         </div>
         <div className="headInfo">
           <b>TOP</b>
