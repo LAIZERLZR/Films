@@ -42,7 +42,7 @@
   font-family: Corbel;
 }
 .imgGenres{
-  width: 250px;
+  width: 280px;
   height: 200px;
   border-radius: 10px;
 }
@@ -67,6 +67,7 @@
   justify-content: space-around;
   width: 380px;
   margin-left: 95px;
+  margin-bottom: 26px;
 }
 
 .header {
@@ -195,8 +196,7 @@ body {
   align-items: center;
   margin: 0 auto;
   justify-content: space-around;
-  background: #eb0040
-
+  background: #eb0040;
 }
 
 .soc {

@@ -2,8 +2,7 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Tops({ films }) {
-  for (let i = 0; i < 12; i++){
-    if ()
+
   return (
     <div className="catalogGenres">
       <div className="itemGenres">
@@ -18,5 +17,5 @@ function Tops({ films }) {
     </div>
   )
   };
-}
+
 export default Tops;

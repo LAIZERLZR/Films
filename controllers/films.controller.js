@@ -54,5 +54,6 @@ module.exports.filmsController = {
     }catch (err){
       console.log(err)
     }
-  }
+  },
+
 }
