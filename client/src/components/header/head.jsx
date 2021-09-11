@@ -6,7 +6,7 @@ function Header() {
     <div>
       <div className="header">
         <div className="siteName">
-          <b>KinoPoisk</b>
+          <a href="http://localhost:3000/"><b>KinoPoisk</b></a>
         </div>
         <b>
           <a className="headInfo" href="/films">
@@ -21,9 +21,7 @@ function Header() {
         <div className="headInfo">
           <b>TOP</b>
         </div>
-        <div className="headInfo">
-          <b>AboutUs</b>
-        </div>
+
       </div>
     </div>
   );

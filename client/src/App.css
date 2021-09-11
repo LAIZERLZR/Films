@@ -2,9 +2,26 @@
   width: 270px;
   height: 400px;
   border-radius: 10px;
+  border: 2px solid grey;
 }
 
 .catalogFilms {
+  display: inline-flex;
+  text-align: center;
+  text-align: center;
+  justify-content: space-around;
+  width: 380px;
+  margin-left: 95px;
+}
+.SoloFilm {
+  display: flex;
+  width: 265px;
+  text-align: center;
+}
+.SoloFilmInfo {
+  width: 950px;
+}
+.film {
   display: inline-flex;
   text-align: center;
   text-align: center;
@@ -17,12 +34,12 @@
   flex-wrap: wrap;
 }
 
-.itemGenres{
+.itemGenres {
   display: flex;
   flex-wrap: wrap;
 }
 
-.cardGenres{
+.cardGenres {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,21 +49,55 @@
   font-size: 25px;
   width: 370px;
   margin-bottom: 10px;
-  color: bisque;
+  color: white;
   font-family: Corbel;
+  text-decoration: none;
+}
+.SoloFilmName {
+  font-size: 25px;
+  width: 930px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Corbel;
+  text-decoration: none;
 }
 
+.imgFilm {
+  width: 270px;
+  height: 400px;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+.ratingFilm {
+  width: 930px;
+  font-size: 18px;
+  color: white;
+  font-family: Corbel;
+  margin-top: 20px;
+}
+.playDiv{
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.play {
+  width: 560px;
+  height: 315px;
+  border-radius: 10px;
+}
 .GenreFilm {
+  width: 930px;
   font-size: 20px;
-  color: bisque;
+  color: white;
   font-family: Corbel;
 }
-.imgGenres{
+.imgGenres {
   width: 280px;
   height: 200px;
   border-radius: 10px;
+  border: 2px solid grey;
 }
-.genreName{
+.genreName {
   font-size: 25px;
   width: 370px;
   margin-bottom: 10px;
@@ -59,8 +110,19 @@
   flex-direction: column;
   align-items: center;
 }
+.filmDescription {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+  width: 370px;
+  margin-bottom: 10px;
+  color: white;
+  width: 500px;
+  font-family: Corbel;
+  margin-left: 220px;
+}
 
-.catalogGenres{
+.catalogGenres {
   display: inline-flex;
   text-align: center;
   text-align: center;
@@ -144,6 +206,7 @@
   width: 280px;
   height: 220px;
   border-radius: 10px;
+  border: 2px solid grey;
 }
 
 .site {
@@ -157,6 +220,7 @@
   width: 250px;
   height: 350px;
   border-radius: 10px;
+  border: 2px solid grey;
 }
 .CinemaInfo {
   font-size: 20px;
@@ -197,6 +261,15 @@ body {
   margin: 0 auto;
   justify-content: space-around;
   background: #eb0040;
+  text-align: justify;
+}
+.AboutUs{
+  font-size: 20px;
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-family: Corbel;
 }
 
 .soc {

@@ -8,7 +8,7 @@ function Genre() {
   const genres = useSelector((state) => state.genres.catalog);
   const loading = useSelector((state) => state.genres.loading);
 
-  console.log(genres)
+  console.log(genres);
   useEffect(() => {
     dispatch(loadGenres());
   }, []);
@@ -16,7 +16,7 @@ function Genre() {
   // if (loading) {
   //   return <div>Please wait, loading data 🙂</div>;
   // }
-  console.log(genres)
+  console.log(genres);
   return (
     <div>
       {genres.map((gnr) => {
