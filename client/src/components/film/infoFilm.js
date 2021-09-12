@@ -15,14 +15,14 @@ function Film({ film }) {
         </div>
       </div>
       <div className="playDiv">
-        <iframe
-           className="play"
-          src="https://www.youtube.com/embed/gbcVZgO4n4E"
+        <div><iframe
+          className="play"
+          src={film.href}
           frameBorder="1"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
 
-        ></iframe>
+        ></iframe></div>
       </div>
     </>
   );

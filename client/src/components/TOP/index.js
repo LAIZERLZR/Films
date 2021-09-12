@@ -1,29 +1,28 @@
-import Genres from "./genres";
+import Films from "./top";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { loadGenres } from "../../redux/features/genres";
+import { loadFilms } from "../../redux/features/film";
+import { useParams } from "react-router-dom"
 
-function Genre() {
+function Film() {
   const dispatch = useDispatch();
-  const genres = useSelector((state) => state.genres.catalog);
-  const loading = useSelector((state) => state.genres.loading);
+  const {id} = useParams()
+  const films = useSelector((state) => state.films.catalog.filter((item) => {
+    if(!id) return true
+    return item.genreId._id === id
+  }));
 
-  console.log(genres)
   useEffect(() => {
-    dispatch(loadGenres());
+    dispatch(loadFilms());
   }, []);
 
-  // if (loading) {
-  //   return <div>Please wait, loading data 🙂</div>;
-  // }
-  console.log(genres)
   return (
     <div>
-      {genres.map((gnr) => {
-        return <Genres key={gnr._id} genre={gnr} />;
+      {films.map((topflm) => {
+        return <Films key={topflm._id} film={topflm} />;
       })}
     </div>
   );
 }
 
-export default Genre;
+export default Film;

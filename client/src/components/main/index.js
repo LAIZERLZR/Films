@@ -16,7 +16,7 @@ function Main() {
           <div>
             <img
               className="imgCinema"
-              src="https://u.9111s.ru/uploads/202101/16/8797602d6aceccb0373e6d61163b071c.jpg"
+              src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/eb573a2a-9bdf-44f9-b432-1d0a70a84de2/800x800"
             />
             <div>Последний Богатырь 3</div>
           </div>

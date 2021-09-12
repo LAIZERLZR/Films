@@ -1,21 +1,22 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import Style from "../../App.css";
 
-function Tops({ films }) {
-
+function topFilms({ film }) {
   return (
-    <div className="catalogGenres">
-      <div className="itemGenres">
-        <div className="cardGenres">
-          <div>
-            <img className="imgGenres" src={films.image} />
+    <div className="catalogFilms">
+      <div className="itemFilms">
+        <div className="cardFilms">
+          <div className="imgTransition">
+            <a href={`/film/${film._id}`}>
+              <img className="imgFilms" src={film.img} />
+            </a>
           </div>
-          <div className="genreName">{films.name}</div>
-          <div>{films.rating}</div>
+          <div className="FilmName">{film.name}</div>
+          <div className="GenreFilm">{film.genreId.name}</div>
         </div>
       </div>
     </div>
-  )
-  };
-
-export default Tops;
+  );
+}
+export default topFilms;

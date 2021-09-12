@@ -11,7 +11,7 @@ function Film() {
     if(!id) return true
     return item.genreId._id === id
   }));
-  const loading = useSelector((state) => state.films.loading);
+/*  const loading = useSelector((state) => state.films.loading);*/
 
   console.log(id)
   useEffect(() => {
@@ -19,9 +19,9 @@ function Film() {
   }, []);
   console.log(films)
 
-  // if (loading) {
-  //   return <div>Please wait, loading data 🙂</div>;
-  // }
+/*  if (loading) {
+    return <div>Please wait, loading data 🙂</div>;
+  }*/
 
 
 

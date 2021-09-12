@@ -8,9 +8,9 @@ function Genres({ genre }) {
       <div className="itemGenres">
         <div className="cardGenres">
           <div>
-            <img className="imgGenres" src={genre.image} />
+            <div className="imgTransition"><Link to={`/genre/${genre._id}`}><img className="imgGenres" src={genre.image} /></Link></div>
           </div>
-          <div className="genreName"><Link to={`/genre/${genre._id}`}>{genre.name}</Link></div>
+          <div className="genreName">{genre.name}</div>
         </div>
       </div>
     </div>
