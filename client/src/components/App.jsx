@@ -6,6 +6,7 @@ import Main from "./main";
 import Footer from "./footer/footer";
 import Genres from "./genres/index";
 import FilmInfo from './film/index';
+import TopFilm from './TOP';
 
 function App(props) {
   return (
@@ -26,6 +27,9 @@ function App(props) {
         </Route>
         <Route path ="/film/:id">
           <FilmInfo/>
+        </Route>
+        <Route>
+          <TopFilm/>
         </Route>
       </Switch>
       <Footer />

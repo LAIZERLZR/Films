@@ -14,6 +14,7 @@ function topFilms({ film }) {
           </div>
           <div className="FilmName">{film.name}</div>
           <div className="GenreFilm">{film.genreId.name}</div>
+          <div className="GenreFilm">Оценка фильма: {film.rating}</div>
         </div>
       </div>
     </div>

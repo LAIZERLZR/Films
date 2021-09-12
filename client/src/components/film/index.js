@@ -10,16 +10,10 @@ function FilmInfo() {
   const films = useSelector((state) => state.films.catalog.filter((item) => {
     return item._id === id
 }));
-  const loading = useSelector((state) => state.films.loading);
 
-  console.log(films)
   useEffect(() => {
     dispatch(loadFilm());
   }, []);
-
-  // if (loading) {
-  //   return <div>Please wait, loading data 🙂</div>;
-  // }
 
   return (
     <div>

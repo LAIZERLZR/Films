@@ -7,19 +7,22 @@ import { useParams } from "react-router-dom"
 function Film() {
   const dispatch = useDispatch();
   const {id} = useParams()
-  const films = useSelector((state) => state.films.catalog.filter((item) => {
+  const films = useSelector((state) => state.films.catalog.sort((a,b) => b.rating - a.rating).filter((item) => {
     if(!id) return true
     return item.genreId._id === id
   }));
 
+  console.log(id)
   useEffect(() => {
     dispatch(loadFilms());
   }, []);
+  console.log(films)
+
 
   return (
     <div>
-      {films.map((topflm) => {
-        return <Films key={topflm._id} film={topflm} />;
+      {films.map((flm) => {
+        return <Films key={flm._id} film={flm} />;
       })}
     </div>
   );

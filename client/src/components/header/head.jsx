@@ -22,8 +22,10 @@ function Header() {
             <b>Genres</b>
           </a>
         </div>
-        <div className="headInfo">
-          <b>Top</b>
+        <div>
+          <a  className="headInfo" href="/topFilms">
+            <b>Top</b>
+          </a>
         </div>
         <div className="headInfo">
           <b>Random movie</b>
