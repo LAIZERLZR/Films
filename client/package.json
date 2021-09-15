@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:4000",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -50,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@material-ui/icons": "^4.11.2",
     "react-redux": "^7.2.5"
   }
 }

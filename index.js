@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors')
-const port = 4000;
+require("dotenv").config()
 const app = express();
 
 app.use(cors())
@@ -11,13 +11,13 @@ app.use(require("./routes/reviews.route"))
 app.use(require("./routes/films.route"))
 app.use(require("./routes/genres.route"))
 app.use(require("./routes/news.route"))
+app.use(require("./routes/users.route"))
 
 
-mongoose
-.connect("mongodb+srv://MAGOMED-BASHIR:boomcool171819@cluster0.13msv.mongodb.net/Films?retryWrites=true&w=majority")
-.then(() => console.log("Подключились к БД"))
-.catch(() => console.log("Ошибка при подключение"));
+mongoose.connect(process.env.MONGO_SERVER, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
 
-app.listen(port, () => {
-  console.log("Сервер работает");
-});
+
+app.listen(process.env.PORT, () => console.log("Server has been started..."))
