@@ -6,6 +6,7 @@ import genresReducer from "./features/genres"
 import filmReducer from "./features/news";
 import newsReducer from "./features/news";
 import commentReducer from "./features/comments"
+import application from "./features/application"
 
 const logger = createLogger({
   diff: true,
@@ -18,7 +19,8 @@ export const store = createStore(
     genres: genresReducer,
     film: filmReducer,
     news: newsReducer,
-    comment: commentReducer
+    comment: commentReducer,
+    application
   }),
   applyMiddleware(thunk, logger)
 );
