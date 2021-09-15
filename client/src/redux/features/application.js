@@ -56,7 +56,7 @@ export const createUser = (name,email,login, password,ConfirmPassword) => {
   return async (dispatch) => {
     dispatch({ type: "application/signup/pending" });
 
-    const response = await fetch("http://localhost:3000/user", {
+    const response = await fetch("/users/", {
       method: "POST",
       body: JSON.stringify({ name,email,login, password,ConfirmPassword }),
       headers: {

@@ -20,7 +20,7 @@ export const store = createStore(
     film: filmReducer,
     news: newsReducer,
     comment: commentReducer,
-    application
+    application: application
   }),
   applyMiddleware(thunk, logger)
 );

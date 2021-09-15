@@ -93,14 +93,14 @@ function SignUpPage() {
     setConfirmPassword(e.target.value);
   };
 
-  const handleSubmit = () => {
-    dispatch(createUser(name,email,login, password,ConfirmPassword));
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch(createUser(name, email, login, password, ConfirmPassword));
   };
 
   const classes = useStyles();
 
   return (
-
 
     <div>
       {error}
@@ -201,7 +201,8 @@ function SignUpPage() {
                 variant="contained"
                 color="primary"
                 className={classes.submit}
-                onClick={handleSubmit} disabled={signingUp}
+                onClick={handleSubmit}
+                disabled={signingUp}
 
               >
                 Зарегестрироваться
