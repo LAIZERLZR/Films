@@ -26,7 +26,7 @@ function FilmInfo() {
           <img className="imgFilm" src={film.img} />
           <div className="SoloFilmInfo">
             <div className="SoloFilmName">Название фильма: {film.name}</div>
-            <div className="SoloFilmName">Страна:</div>
+            <div className="SoloFilmName">Страна: {film.country}</div>
             <div className="SoloFilmName">Жанр: {film.genreId.name}</div>
             <div className="SoloFilmName">
               Длительность фильма: {film.duration}

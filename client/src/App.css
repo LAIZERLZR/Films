@@ -134,7 +134,7 @@
 .header {
   text-align: center;
   color: #100e19;
-  background-color: #eb0040;
+  background-color: cornflowerblue;
   display: flex;
   width: 80%;
   height: 70px;
@@ -152,6 +152,13 @@
   text-decoration: none;
   font-family: Corbel;
 }
+.headInfo:hover{
+  transform: scale(1.1);
+}
+.headInfo{
+  transition: transform .2s;
+}
+
 .search {
   display: flex;
   background: #100e19;
@@ -163,7 +170,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #eb0040;
+  background-color: cornflowerblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,7 +309,7 @@ body {
   align-items: center;
   margin: 0 auto;
   justify-content: space-around;
-  background: #eb0040;
+  background: cornflowerblue;
   text-align: justify;
 }
 .AboutUs {
@@ -342,13 +349,7 @@ body {
 .hide + label ~ div {
   display: none;
 }
-.hide + label {
-  border-bottom: 1px dotted green;
-  padding: 0;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-}
+
 .hide:checked + label {
   color: red;
   border-bottom: 0;
@@ -368,7 +369,7 @@ body {
   font-size: 20px;
 }
 .star {
-  color: #eb0040;
+  color: cornflowerblue;
 }
 .CommentAuthor{
   color: white;
@@ -469,4 +470,11 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #100e19;
+}
+.socDiv{
+  transition: transform .2s;
+}
+
+.socDiv:hover{
+  transform: scale(1.1);
 }

@@ -6,19 +6,16 @@ import { faFilm } from "@fortawesome/free-solid-svg-icons";
 import { faTheaterMasks } from "@fortawesome/free-solid-svg-icons";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
-import { useDispatch } from 'react-redux';
-
-
+import { useDispatch } from "react-redux";
 
 function Header() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   function handleChange(e) {
     dispatch({
       type: "search",
-      payload: e.target.value
-    })
+      payload: e.target.value,
+    });
   }
-
 
   return (
     <div>
@@ -29,19 +26,20 @@ function Header() {
           </a>
         </div>
 
-        <b>
+        <div className="headInfo">
           <a className="headInfo" href="/films">
             <FontAwesomeIcon icon={faFilm} />
             <b>Movies</b>
           </a>
-        </b>
-        <div>
+        </div>
+
+        <div className="headInfo">
           <a className="headInfo" href="/genres">
             <FontAwesomeIcon icon={faTheaterMasks} />
             <b>Genres</b>
           </a>
         </div>
-        <div>
+        <div className="headInfo">
           <a className="headInfo" href="/topFilms">
             <FontAwesomeIcon icon={faTrophy} />
             <b>Top</b>
@@ -54,7 +52,12 @@ function Header() {
           </a>
         </div>
         <div className="search">
-          <input onChange={handleChange} type="text" className="searchText" placeholder="Search..." />
+          <input
+            onChange={handleChange}
+            type="text"
+            className="searchText"
+            placeholder="Search..."
+          />
           <a className="searchBtn">
             <FontAwesomeIcon icon={faSearch} />
           </a>
