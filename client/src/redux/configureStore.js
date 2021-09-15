@@ -3,7 +3,9 @@ import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
 import filmsReducer from "./features/film";
 import genresReducer from "./features/genres"
-import filmReducer from "./features/film";
+import filmReducer from "./features/news";
+import newsReducer from "./features/news";
+import commentReducer from "./features/comments"
 
 const logger = createLogger({
   diff: true,
@@ -15,6 +17,8 @@ export const store = createStore(
     films: filmsReducer,
     genres: genresReducer,
     film: filmReducer,
+    news: newsReducer,
+    comment: commentReducer
   }),
   applyMiddleware(thunk, logger)
 );

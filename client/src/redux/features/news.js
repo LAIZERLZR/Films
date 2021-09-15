@@ -7,7 +7,7 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case "Genres/load":
+    case "News/load":
       return {
         ...state,
         catalog: action.payload,
@@ -20,12 +20,12 @@ export default function reducer(state = initialState, action) {
 
 
 
-export const loadGenres = () => {
+export const loadNews = () => {
   return (dispatch) => {
-    fetch("http://localhost:4000/genres")
+    fetch("http://localhost:4000/news")
     .then((res) => res.json())
     .then((data) => {
-      dispatch({ type: "Genres/load", payload: data });
+      dispatch({ type: "News/load", payload: data });
     });
   };
 };

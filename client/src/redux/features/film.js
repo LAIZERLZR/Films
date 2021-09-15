@@ -1,6 +1,7 @@
 const initialState = {
   catalog: [],
   loading: false,
+  search: "",
 };
 
 
@@ -10,6 +11,7 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         catalog: action.payload,
+        random: action.payload.random,
         loading: true,
       }
     case "Film/load":
@@ -18,11 +20,15 @@ export default function reducer(state = initialState, action) {
         catalog: action.payload,
         loading: true,
       }
+    case "search":
+      return {
+        ...state,
+        search: action.payload,
+      }
     default:
       return state;
   }
 }
-
 
 
 export const loadFilms = () => {

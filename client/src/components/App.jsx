@@ -7,6 +7,8 @@ import Footer from "./footer/footer";
 import Genres from "./genres/index";
 import FilmInfo from './film/index';
 import TopFilm from './TOP';
+import News from './FilmNews';
+import FilmComment from './comments';
 
 function App(props) {
   return (
@@ -28,8 +30,11 @@ function App(props) {
         <Route path ="/film/:id">
           <FilmInfo/>
         </Route>
-        <Route>
+        <Route path='/topFilms'>
           <TopFilm/>
+        </Route>
+        <Route path='/news'>
+          <News/>
         </Route>
       </Switch>
       <Footer />

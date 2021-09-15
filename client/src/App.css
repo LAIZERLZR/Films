@@ -7,24 +7,20 @@
 .catalogFilms {
   display: inline-flex;
   text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  width: 380px;
-  margin-left: 95px;
+  width: 310px;
+  margin-left: 145px;
 }
 .SoloFilm {
   display: flex;
   width: 265px;
-  text-align: center;
   margin-bottom: 50px;
 }
 .SoloFilmInfo {
   width: 950px;
+  margin-left: 30px;
 }
 .film {
   display: inline-flex;
-  text-align: center;
-  text-align: center;
   justify-content: space-around;
   width: 380px;
   margin-left: 95px;
@@ -75,10 +71,12 @@
   font-family: Corbel;
   margin-top: 20px;
 }
-.playDiv{
-  width: 280px;
+.playDiv {
   margin: 0 auto;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 1350px;
 }
 .play {
   width: 560px;
@@ -106,22 +104,21 @@
 }
 
 .cardFilms {
-  width: 200px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+  margin-left: 10px;
 }
 .filmDescription {
   color: white;
   text-align: justify;
   font-size: 20px;
-  width: 370px;
   margin-bottom: 10px;
   color: white;
   width: 500px;
   font-family: Corbel;
-  margin-left: 220px;
 }
 
 .catalogGenres {
@@ -155,14 +152,14 @@
   text-decoration: none;
   font-family: Corbel;
 }
-.search{
+.search {
   display: flex;
   background: #100e19;
   height: 40px;
   border-radius: 40px;
   padding: 10px;
 }
-.searchBtn{
+.searchBtn {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -176,11 +173,11 @@
 .searchBtn > i {
   font-size: 30px;
 }
-.search:hover > .searchText{
+.search:hover > .searchText {
   width: 240px;
   padding: 0 6px;
 }
-.searchText{
+.searchText {
   border: none;
   background: none;
   outline: none;
@@ -192,16 +189,17 @@
   width: 0;
   font-weight: bold;
 }
-icon{
+icon {
   padding-top: 5px;
 }
 .siteName {
   font-size: 40px;
   font-family: Trattatello, fantasy;
 }
-.KinoPoisk{
+.KinoPoisk {
   text-decoration: none;
   color: #100e19;
+  cursor: pointer;
 }
 
 .firstFilmInfo {
@@ -279,7 +277,6 @@ icon{
   color: white;
   justify-content: space-between;
   text-align: center;
-
 }
 
 body {
@@ -308,7 +305,7 @@ body {
   background: #eb0040;
   text-align: justify;
 }
-.AboutUs{
+.AboutUs {
   font-size: 20px;
   width: 700px;
   margin: 0 auto;
@@ -324,17 +321,152 @@ body {
   color: #100e19;
 }
 
-.imgTransition{
+.imgTransition {
   display: inline-block;
   overflow: hidden;
   border: 2px solid grey;
   border-radius: 10px;
 }
 
-.imgTransition img{
+.imgTransition img {
   transition: 1s;
   display: block;
 }
-.imgTransition img:hover{
+.imgTransition img:hover {
   transform: scale(1.2);
+}
+
+.hide {
+  display: none;
+}
+.hide + label ~ div {
+  display: none;
+}
+.hide + label {
+  border-bottom: 1px dotted green;
+  padding: 0;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+}
+.hide:checked + label {
+  color: red;
+  border-bottom: 0;
+}
+.hide:checked + label + div {
+  display: block;
+  background: #100e19;
+  padding: 10px;
+}
+.demo {
+  margin: 5% 10%;
+}
+
+.textPass {
+  color: white;
+  font-family: Corbel;
+  font-size: 20px;
+}
+.star {
+  color: #eb0040;
+}
+.CommentAuthor{
+  color: white;
+  font-family: Corbel;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.CommentText{
+  color: white;
+  font-family: Corbel;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.passImg {
+  border-radius: 5%;
+  width: 25%;
+}
+
+.newsCatalog {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.comment {
+  display: flex;
+}
+.commentDiv {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.newsTitle {
+  font-size: 25px;
+  color: white;
+  font-family: Corbel;
+  margin-bottom: 20px;
+}
+
+.newImg {
+  width: 370px;
+  height: 220px;
+  border-radius: 5%;
+}
+.textNews {
+  color: white;
+  font-family: Corbel;
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 30px;
+}
+
+.newsInfoDiv {
+  display: flex;
+  position: relative;
+}
+
+.infoAndPlay {
+  display: flex;
+}
+.bay {
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: darkorange;
+  font-family: Corbel;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.Price {
+  margin-top: 50px;
+  font-size: 25px;
+  width: 930px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Corbel;
+  text-decoration: none;
+}
+.headFilm {
+  display: block;
+}
+.AuthorImg{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.support{
+  width: 200px;
+  font-family: Corbel;
+  font-size: 18px;
+  text-decoration: none;
+  color: #100e19;
 }
