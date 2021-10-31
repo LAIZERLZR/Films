@@ -10,7 +10,7 @@ import TopFilm from './TOP';
 import News from './FilmNews';
 import SignupPage from "./pages/SignupPage";
 import SigninPage from "./pages/SigninPage";
-import FilmComment from './comments';
+
 
 function App(props) {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import film from '../films/film';
+
 
 function Genres({ genre }) {
   return (

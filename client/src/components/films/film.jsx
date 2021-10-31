@@ -1,7 +1,4 @@
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
-import Style from "../../App.css";
-import Fuse from "fuse.js"
+
 
 
 function Films({ film }) {

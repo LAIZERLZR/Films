@@ -6,17 +6,11 @@ import { loadGenres } from "../../redux/features/genres";
 function Genre() {
   const dispatch = useDispatch();
   const genres = useSelector((state) => state.genres.catalog);
-  const loading = useSelector((state) => state.genres.loading);
 
-  console.log(genres);
   useEffect(() => {
     dispatch(loadGenres());
   }, []);
 
-  // if (loading) {
-  //   return <div>Please wait, loading data 🙂</div>;
-  // }
-  console.log(genres);
   return (
     <div>
       {genres.map((gnr) => {

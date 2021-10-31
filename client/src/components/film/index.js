@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loadFilm } from "../../redux/features/film";
-import { Route, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import FilmComment from '../comments';
 
 function FilmInfo() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const film = useSelector((state) =>
-    state.films.catalog.find((item) => {
+
+  const film = useSelector((state) => state.films.catalog.find((item) => {
       return item._id === id;
     })
   );

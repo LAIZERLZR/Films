@@ -7,6 +7,7 @@ import { faTheaterMasks } from "@fortawesome/free-solid-svg-icons";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
+import { faUser } from '@fortawesome/free-regular-svg-icons';
 
 function Header() {
   const dispatch = useDispatch();
@@ -60,6 +61,11 @@ function Header() {
           />
           <a className="searchBtn">
             <FontAwesomeIcon icon={faSearch} />
+          </a>
+        </div>
+        <div className="headInfo">
+          <a className="headInfo" href="http://localhost:3000/signup">
+            <FontAwesomeIcon icon={faUser} />
           </a>
         </div>
       </div>

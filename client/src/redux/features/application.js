@@ -52,7 +52,7 @@ export default function application(state = initialState, action) {
   }
 }
 
-export const createUser = (name,email,login, password,ConfirmPassword) => {
+export const createUser = (name,email,login, password,ConfirmPassword, history) => {
   return async (dispatch) => {
     dispatch({ type: "application/signup/pending" });
 
@@ -70,6 +70,7 @@ export const createUser = (name,email,login, password,ConfirmPassword) => {
       dispatch({ type: "application/signup/rejected", error: json.error });
     } else {
       dispatch({ type: "application/signup/fulfilled", payload: json });
+       history.push("/signin");
     }
   };
 };
@@ -92,8 +93,8 @@ export const auth = (login, password) => {
       dispatch({ type: "application/signin/rejected", error: json.error });
     } else {
       dispatch({ type: "application/signin/fulfilled", payload: json });
-
       localStorage.setItem("token", json.token);
+
     }
   };
 };

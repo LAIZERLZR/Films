@@ -15,6 +15,7 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { useHistory } from "react-router-dom";
 
 
 function Copyright() {
@@ -92,10 +93,11 @@ function SignUpPage() {
   const handleChangeConfirmPassword = (e) => {
     setConfirmPassword(e.target.value);
   };
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    dispatch(createUser(name, email, login, password, ConfirmPassword));
+    dispatch(createUser(name, email, login, password, ConfirmPassword, history));
   };
 
   const classes = useStyles();
@@ -203,7 +205,6 @@ function SignUpPage() {
                 className={classes.submit}
                 onClick={handleSubmit}
                 disabled={signingUp}
-
               >
                 Зарегестрироваться
               </Button>
